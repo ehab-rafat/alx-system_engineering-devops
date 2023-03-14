@@ -1,0 +1,12 @@
+#!/bin/bash
+local i=0
+local num=0
+local n=$BINARY
+
+while [$n != 0] 
+do
+digit = `expr $n % 10`
+num = $((num + digt * 2 ** i))
+n=`expr $n /10`
+((i++))
+done

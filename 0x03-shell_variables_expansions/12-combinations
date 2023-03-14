@@ -1,0 +1,12 @@
+#!/bin/bash
+for i in {a..z}
+do
+  for j in {a..z}
+   do
+      k=$i$j
+      if [ $k == "oo" ]; then
+        continue
+      fi
+      echo $k
+   done
+done
